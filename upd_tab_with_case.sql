@@ -6,10 +6,10 @@
 whenever sqlerror then continue;
 drop table rj_test01;
 
+prompt Creating rj_test01 and insert test data
 create table rj_test01 (a varchar2(10),
                       b varchar2(10),
-                      c varchar2(10));
-                      
+                      c varchar2(10));                  
 insert into rj_test01 (a,b,c) values ('aap','noot',null);                      
 insert into rj_test01 (a,b,c) values ('ton','toon',null);                      
 
